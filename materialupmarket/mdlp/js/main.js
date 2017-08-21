@@ -1,24 +1,27 @@
 (function($) {
-var App = { init: function() { App.Reviews();                  // reviews carousel
-							   App.Nivo_Lightbox();            // lightbox
-							   App.Elements_animation();       // animations
-							   },
-     
+var App = {
+
+    init: function() {
+        App.Reviews();                  // reviews carousel
+        App.Nivo_Lightbox();            // lightbox
+        App.Elements_animation();       // animations
+    },
+
     // Elements Animation
     Elements_animation: function() {
-		$('#more_info').waypoint(function() {
+        $('#more_info').waypoint(function() {
             setTimeout(function(){$('.content_anim1').addClass('animated fadeInUp')},0);
             setTimeout(function(){$('.content_anim2').addClass('animated fadeInUp')},200);
             setTimeout(function(){$('.content_anim3').addClass('animated fadeInUp')},400);
-        }, { offset: '50%' });    
-    
-    	$('#features').waypoint(function() {
+        }, { offset: '50%' });
+
+        $('#features').waypoint(function() {
             setTimeout(function(){$('.content_anim4').addClass('animated fadeInUp')},0);
             setTimeout(function(){$('.content_anim5').addClass('animated fadeInUp')},200);
             setTimeout(function(){$('.content_anim6').addClass('animated fadeInUp')},400);
             setTimeout(function(){$('.content_anim7').addClass('animated fadeInUp')},600);
         }, { offset: '50%' });
-        
+
         $('#newspapers').waypoint(function() {
             setTimeout(function(){$('.content_anim8').addClass('animated fadeInUp')},0);
             setTimeout(function(){$('.content_anim9').addClass('animated fadeInUp')},200);
@@ -42,34 +45,32 @@ var App = { init: function() { App.Reviews();                  // reviews carous
             setTimeout(function(){$('.content_anim24').addClass('animated fadeInUp')},1800);
             setTimeout(function(){$('.content_anim25').addClass('animated fadeInUp')},2000);
         }, { offset: '50%' });
-        
+
         $('#reviews').waypoint(function() {
             setTimeout(function(){$('.content_anim26').addClass('animated fadeInUp')},0);
-        }, { offset: '50%' }); 
-        
+        }, { offset: '50%' });
+
         $('#faq').waypoint(function() {
             setTimeout(function(){$('.content_anim27').addClass('animated fadeInUp')},0);
             setTimeout(function(){$('.content_anim28').addClass('animated fadeInUp')},200);
             setTimeout(function(){$('.content_anim29').addClass('animated fadeInUp')},400);
-        }, { offset: '50%' });          
-        
+        }, { offset: '50%' });
+
     },
-    
-    
+
     // Nivo Lightbox
     Nivo_Lightbox: function() {
-	    $('.screenshots_gallery a').nivoLightbox({
-		    effect: 'slideDown'    
-	    });	
+        $('.screenshots_gallery a').nivoLightbox({
+            effect: 'slideDown'
+        });
     },
-    
-        
+
     // Reviews Carousel
     Reviews: function() {
-	    $(".owl-carousel").owlCarousel({
-		    loop:true,
-		    singleItem : true,
-	    });	
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            singleItem : true,
+        });
     },
 
 }
@@ -77,7 +78,6 @@ var App = { init: function() { App.Reviews();                  // reviews carous
 $(function() {
   App.init();
   $(window).resize();
-    
 });
 
 })(jQuery);

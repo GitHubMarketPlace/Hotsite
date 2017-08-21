@@ -5,12 +5,12 @@ Color Palette - Indigo
 
 .btn,
 .btn-large {
-	background-color: #e53935;
+	background-color: #0ba919;
 }
 
 .btn:hover,
 .btn-large:hover {
-	background-color: #f44336;
+	background-color: #0dce1e;
 }
 
 .hero_fullscreen.background_solid,
