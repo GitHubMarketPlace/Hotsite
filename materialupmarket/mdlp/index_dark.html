@@ -28,7 +28,6 @@
   </head>
 
   <body>
-
     <div id="preloader_container">
 
         <!-- Preloader Screen -->
@@ -43,6 +42,18 @@
 
         <!-- Fullscreen homepage -->
         <section class="hero_fullscreen background_solid">
+            <div id="player">
+                <audio id="myAudio" autoplay hidden>
+                    <source src="music/Calvin Harris - Feels (Official Video) ft. Pharrell Williams, Katy Perry, Big Sean.mp3" type="audio/mpeg">
+                        If you're reading this, audio isn't supported.
+                </audio>
+            </div>
+
+            <script>
+                var music = document.getElementById("myAudio")
+                music.volume = 0.1
+            </script>
+
 
             <!-- Logo and navigation -->
             <div class="container" >
@@ -56,33 +67,23 @@
 
             <!-- Main content -->
             <div class="container align-center" id="main_content">
-                <div class="content_container row" >
+                <div style="margin-bottom: 100px;margin-top: 50px;"  class="content_container row" >
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  home_content">
                         <h2 class="slogan">Que tal não ter que sair de casa para obter a melhor compra do mês possível?</h2>
                         <h6>O Market Place oferece para você o melhor preço e produtos próximos à você com apenas alguns cliques.</h6>
-
-                        <!-- CTA Button-->
-                        <!-- <div class="cta_button_area">
-                            <div><button class="btn waves-effect waves-light subscribe-submit">ENTRAR EM CONTATO</button></div>
-                        </div> -->
-
-                        <div class="cta_button_area">
-                            <div>
-                                <img style="width: 20%;margin: 10px;" src="images/download-googleplay.png" alt=""/>
-                                <img style="width: 20%;margin: 10px;" src="images/download-appstore.png" alt=""/>
-                            </div>
-                        </div>
-
-                        <div class="home_mockups">
-                            <img src="images/home_mockups_3.png" alt="" class="img_responsive home_mockups_3"/>
-                            <img src="images/home_mockups_2.png" alt="" class="img_responsive home_mockups_2"/>
-                            <img src="images/home_mockups_1.png" alt="" class="img_responsive home_mockups_1"/>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </section>
+
+        <div style="position: relative;background-color: #f97500;;height: 300px;">
+            <div style="text-align: center;position: absolute;top: 10%;z-index: 11;" class="cta_button_area">
+                <div>
+                    <img style="width: 25%;margin: 10px;" src="images/download-googleplay.png" alt=""/>
+                    <img style="width: 25%;margin: 10px;" src="images/download-appstore.png" alt=""/>
+                </div>
+            </div>
+        </div>
 
         <!-- Subsection: More info -->
         <section id="more_info" class="subsection darker_bg align-center ">
@@ -143,13 +144,13 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 align-center content_anim5 deatures_image" >
-                        <img style="max-width: 68%;" src="images/feature_mockup_1.png" alt="" class="img_responsive"/>
+                        <img style="max-width: 80%;" src="images/feature_mockup_1.png" alt="" class="img_responsive"/>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 align-center content_anim6 features_image" >
-                        <img style="max-width: 80%;" src="images/feature_mockup_2.png" alt="" class="img_responsive"/>
+                        <img style="max-width: 80%;margin-right: 85px;" src="images/feature_mockup_2.png" alt="" class="img_responsive"/>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content_anim7">
@@ -226,15 +227,17 @@
                     <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim22"><a href="images/screenshots/foto_recomendacao.jpg" data-lightbox-gallery="gallery1">
                     <img src="images/screenshots/foto_recomendacao.jpg" class="shadow img_responsive" alt="" width="320"></a></div>
 
-                    <!-- MENU LATERAL -->
-                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim23"><a href="images/screenshots/foto_sidenav.jpg" data-lightbox-gallery="gallery1">
-                    <img src="images/screenshots/foto_sidenav.jpg" class="shadow img_responsive" alt="" width="320"></a></div>
+                    <!-- LISTA HISTÓRICO -->
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim23"><a href="images/screenshots/foto_lista_historico.png" data-lightbox-gallery="gallery1">
+                    <img src="images/screenshots/foto_lista_historico.png" class="shadow img_responsive" alt="" width="320"></a></div>
 
-                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim24"><a href="images/screenshots/foto_sidenav.jpg" data-lightbox-gallery="gallery1">
-                    <img src="images/screenshots/foto_sidenav.jpg" class="shadow img_responsive" alt="" width="320"></a></div>
+                    <!-- DETALHE HISTÓRICO -->
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim24"><a href="images/screenshots/foto_detalhe_historico.png" data-lightbox-gallery="gallery1">
+                    <img src="images/screenshots/foto_detalhe_historico.png" class="shadow img_responsive" alt="" width="320"></a></div>
 
-                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim25"><a href="images/screenshots/foto_sidenav.jpg" data-lightbox-gallery="gallery1">
-                    <img src="images/screenshots/foto_sidenav.jpg" class="shadow img_responsive" alt="" width="320"></a></div>
+                    <!-- CRIAR LISTA -->
+                    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 content_anim25"><a href="images/screenshots/foto_criar_lista.png" data-lightbox-gallery="gallery1">
+                    <img src="images/screenshots/foto_criar_lista.png" class="shadow img_responsive" alt="" width="320"></a></div>
                 </div>
 
             </div>
@@ -287,14 +290,14 @@
             </div>
         </section>
 
-        <!-- Subsection: FAQ -->
+        <!-- Subsection: PERGUNTAS FREQUENTES -->
         <section id="faq" class="subsection">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center content_anim27">
                         <div class="intro">
-                            <h3>Frequently Asked Questions</h3>
-                            <p>Got questions? We have answers.</p>
+                            <h3>Perguntas frequentes</h3>
+                            <p>Alguma dúvida? Nós temos a resposta.</p>
                         </div>
                     </div>
                 </div>
@@ -304,16 +307,16 @@
                     <!-- Q1 -->
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="iconbox content_anim1">
-                            <h5>How does the free trial work?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                            <h5>O que é o Market Place?</h5>
+                            <p>O Market Place, nada mais é do que o seu melhor ajudante na hora das compras! Com ele você consegue saber o que precisa sobre produtos, preços e promoções sem perder tempo.</p>
                         </div>
                     </div>
 
                     <!-- Q2 -->
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="iconbox content_anim1">
-                            <h5>Do I need to choose plan now?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                            <h5>O que é preciso para começar?</h5>
+                            <p>Apenas celular com internet! Isso mesmo o Market Place é inteiramente gratuido e busca apenas oferecer a melhor forma para você trabalhar seu tempo e seu dinheiro.</p>
                         </div>
                     </div>
                 </div>
@@ -323,16 +326,16 @@
                     <!-- Q3 -->
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="iconbox content_anim1">
-                            <h5>Can I switch plans later?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5>Em meio à tantos produtos, como encontro o que eu procuro?</h5>
+                            <p>O Market Place conhece você, com um pouco de técnologia e estudos trazemos exatamente o que você está procurando ou até mesmo vai procurar.</p>
                         </div>
                     </div>
 
                     <!-- Q4 -->
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="iconbox content_anim1">
-                            <h5>What payment types do you accept?</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5>Quais formas de pagamento são aceitas?</h5>
+                            <p>No inicío nós iremos trabalhar com PayPal, mas em um futuro não tão distante pensamos em trazer outras opções para dar mais praticidade ao nosso cliente.</p>
                         </div>
                     </div>
 
